@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Booking app</title>
+    </head>
+    <body>
+      <div ng-app="bookingApp" class="container" ng-controller="bookingController as bookingCtrl">
+      <div >Booking Details</div>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" class="form-control" ng-model="bookingCtrl.user.name" /></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>
+                <input type="text" class="form-control" ng-model="bookingCtrl.user.phone" /></td>
+        </tr>
+        <tr>
+            <td>seat</td>
+            <td>
+                <input type="text" class="form-control" ng-model="bookingCtrl.user.seat" /></td>
+        </tr>
+        <tr>
+            <td class="text-right" colspan="2">
+                <button ng-click="bookingCtrl.addUser()" class="btn btn-primary">
+                    Add
+                </button>
+            </td>
+        </tr>
+    </table>
+  </div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controller/controller.js"></script>
+  <script src="service/service.js"></script>
+  </body>
+</html>
